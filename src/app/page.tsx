@@ -248,7 +248,7 @@ export default function Home() {
                   }}
                   subtitle="Flutter developer & Automation Engineer"
                   description= <>
-                  <DescriptionPoint title="Automation Testing" description="Developed and maintained automation test scripts for the JioMeet Pro app using Cucumber and Java, ensuring the app's reliability and quality." />
+                  <DescriptionPoint title="Automation Testing" description="Developed and maintained automation test scripts for the JioMeet Pro app using Cucumber and Java, ensuring the app&apos;s reliability and quality." />
                   <DescriptionPoint title="Jio News App" description="
                   Contributed to the development of the Jio News app, a digital newsstand that provides access to a wide range of newspapers and magazines. " />
 
@@ -270,13 +270,6 @@ export default function Home() {
 
 
 
-{/* "I worked as the sole developer on the following projects:
-
-AI/ML: Implemented a facial recognition service to recognize user faces for marking attendance.
-Firebase: Integrated and implemented various Firebase services.
-Geo-Fencing: Developed a system for marking attendance when a user enters a specific area of the office.
-Google Maps: Utilized Google Maps to display employees' locations on the map along with additional information." */}
-
 
 
               <li className="mb-12">
@@ -295,7 +288,7 @@ Google Maps: Utilized Google Maps to display employees' locations on the map alo
                  
                   <DescriptionPoint title="Geo-Fencing" description="Developed a system for marking attendance when a user enters a specific area of the office." />
                  
-                  <DescriptionPoint title="Google Maps" description="Utilized Google Maps to display employees' locations on the map along with additional information" />
+                  <DescriptionPoint title="Google Maps" description="Utilized Google Maps to display employees&apos; locations on the map along with additional information" />
                   
                   </>
                   technologies={[
@@ -378,7 +371,7 @@ Google Maps: Utilized Google Maps to display employees' locations on the map alo
   );
 }
 
-export function DescriptionPoint(props: {
+ function DescriptionPoint(props: {
   title?: string;
   description: any;
 }) {
@@ -397,7 +390,7 @@ export function DescriptionPoint(props: {
 }
 
 
-export function Experience(props: {
+ function Experience(props: {
   /// starting date
   timePeriod: string;
   role: string;
@@ -468,7 +461,7 @@ export function Experience(props: {
   );
 }
 
-export function Project(props: {
+ function Project(props: {
   title: string;
   description: string;
   technologies: { label: string }[];
@@ -543,7 +536,7 @@ return (
 
 }
 
-export function Chip(props: { label: string }) {
+ function Chip(props: { label: string }) {
   return (
     <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
       {props.label}
@@ -551,7 +544,7 @@ export function Chip(props: { label: string }) {
   );
 }
 
-export function SocialMedia() {
+ function SocialMedia() {
   return (
     <ul className="ml-1 mt-8 flex items-center" aria-label="Social media">
       <li className="mr-5 text-xs shrink-0">
@@ -691,7 +684,7 @@ function Bio(props: {  }) {
           only meets but exceeds expectations.
         </p>
         <p className="emoji">🚀👨‍💻</p>
-        <p>Let's code for a future where innovation knows no bounds!</p>
+        <p>Let&apos;s code for a future where innovation knows no bounds!</p>
       </div>
     </section>
   );
