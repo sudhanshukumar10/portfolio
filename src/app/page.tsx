@@ -301,7 +301,7 @@ export default function Home() {
                     { name: "Google Maps" },
                     { name: "Machine Learning" },
                   ]}
-                  timePeriod="Aug — May 2022 "
+                  timePeriod="Feb — Sep 2021 "
                 />
               </li>
 
