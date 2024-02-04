@@ -5,6 +5,7 @@ import { title } from "process";
 import { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { url } from "inspector";
+import { MailOutline, Phone, PhoneAndroid, PhoneOutlined } from "@mui/icons-material";
 
 export default function Home() {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
@@ -13,11 +14,7 @@ export default function Home() {
     setCursorPosition({ x: e.clientX, y: e.clientY });
   };
 
-  const [aboutRef, aboutInView] = useInView({ threshold: 0 });
-  const [experienceRef, experienceInView] = useInView({ threshold: 0 });
-  const [projectRef, projectInView] = useInView({ threshold: 0 });
 
-  const active = "bg-slate-200 w-16 bg-slate-200 motion-reduce:transition-none";
 
   return (
     <body className="bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900">
@@ -45,6 +42,23 @@ export default function Home() {
                 I build pixel-perfect, engaging, and accessible digital
                 experiences.
               </p>
+
+              
+
+              <p className="mt-4 max-w-xs leading-normal flex items-center gap-22">
+                <MailOutline sx={{height:20, marginRight: 1}} />
+                <a href="mailto:iShreeyansh@gmail.com" className="hover:underline">
+                   iShreeyansh@gmail.com
+                   </a>
+              </p>
+
+              <p className="mt-4 max-w-xs leading-normal flex items-center gap-22">
+                <PhoneAndroid sx={{height:20, marginRight: 1}} />
+                <a href="tel:+919685962799" className="hover:underline">
+                    +919685962799
+                </a>
+              </p>
+
               <nav
                 className="nav hidden lg:block"
                 aria-label="In-page jump links"
@@ -88,10 +102,10 @@ export default function Home() {
           </header>
 
           <main id="content" className="pt-24 lg:w-1/2 lg:py-24">
-            <Bio ref={aboutRef} />
+            <Bio />
 
             <section
-              ref={experienceRef}
+          
               id="experience"
               className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
               aria-label="Work experience"
@@ -106,7 +120,106 @@ export default function Home() {
                     url: "https://hub.sunstone.in/",
                   }}
                   subtitle="Software Engineer"
-                  description="I am working on the Sunstone app. I am responsible for building new features and maintaining the app. Created LMS from scratch, which is used by 10000+ students."
+                  description=<>
+                    <DescriptionPoint
+                      title="LMS & Content Library"
+                      description={
+                        <>
+                          Developed a Learning Management System (LMS) and a
+                          comprehensive content library for both mobile apps and
+                          web platforms, featuring video progress tracking
+                          capabilities.
+                        </>
+                      }
+                    />
+
+                    <DescriptionPoint
+                      title="Bluetooth Low Enegery(BLE)"
+                      description={
+                        <>
+                          Engineered an attendance automation system utilizing
+                          Bluetooth Low Energy (BLE), enabling users to mark
+                          attendance without the need for additional hardware.
+                        </>
+                      }
+                    />
+
+                    <DescriptionPoint
+                      title="Firebase Services"
+                      description={
+                        <>
+                          Implemented various Firebase services, including
+                          Firebase Cloud Messaging (FCM), Remote Config,
+                          Analytics, and Dynamic Links.
+                        </>
+                      }
+                    />
+
+                    <DescriptionPoint
+                      title="Webview"
+                      description={
+                        <>
+                          Extensively worked with webviews (Native and Flutter),
+                          developing a media player, employing it as a widget,
+                          and facilitating communication.
+                        </>
+                      }
+                    />
+
+                    <DescriptionPoint
+                      title="Analytics & Tracking"
+                      description={
+                        <>
+                          Analytics & Tracking: Gained experience with multiple
+                          platforms such as Mixpanel, MoEngage, and Firebase.
+                          Developed an algorithm for accurately calculating time
+                          spent on pages.
+                        </>
+                      }
+                    />
+
+                    <DescriptionPoint
+                      title="Deep Links & Dynamic link"
+                      description={
+                        <>
+                          Established an infrastructure to manage deep links
+                          using pattern matching and implemented Branch and
+                          Firebase Dynamic Links. also implemented Deffered deep
+                          linking for tracking ads app installs.
+                        </>
+                      }
+                    />
+
+                    <DescriptionPoint
+                      title="CI/CD"
+                      description={
+                        <>
+                          CI/CD: Set up an Azure pipeline integrated with GitHub
+                          from scratch, enabling simultaneous deployment of
+                          builds across iOS, Android, and web platforms.
+                        </>
+                      }
+                    />
+
+                    <DescriptionPoint
+                      title="Native Development"
+                      description={
+                        <>
+                          Contributed to the native development aspects of
+                          Android, iOS, and web platforms.
+                        </>
+                      }
+                    />
+
+                    <DescriptionPoint
+                      description={
+                        <>
+                          Addressed numerous critical bugs and made
+                          contributions to open-source libraries.
+                        </>
+                      }
+                    />
+                  </>
                   technologies={[
                     { name: "Flutter" },
                     { name: "iOS" },
@@ -118,7 +231,6 @@ export default function Home() {
                     { name: "Firebase" },
                     { name: "CI/CD" },
                     { name: "Mixpanel MoEngage" },
-
                     { name: "LMS" },
                     { name: "Github" },
                   ]}
@@ -129,14 +241,22 @@ export default function Home() {
 
               <li className="mb-12">
                 <Experience
-                  role="Automation  Engineer"
+                  role="SDE"
                   companyName={{
                     name: "Reliance Jio",
                     url: "https://jiomeetpro.jio.com/",
                   }}
-                  subtitle="Test Engineer"
-                  description="Worked on the JioMeetPro app testing team. I was responsible for writing automation scripts for the app."
+                  subtitle="Flutter developer & Automation Engineer"
+                  description= <>
+                  <DescriptionPoint title="Automation Testing" description="Developed and maintained automation test scripts for the JioMeet Pro app using Cucumber and Java, ensuring the app's reliability and quality." />
+                  <DescriptionPoint title="Jio News App" description="
+                  Contributed to the development of the Jio News app, a digital newsstand that provides access to a wide range of newspapers and magazines. " />
+
+                  </>
                   technologies={[
+                    { name: "Flutter" },
+                    { name: "Clean architecture" },
+                    { name: "REST sevices" },
                     { name: "Cucumber" },
                     { name: "BDD" },
                     { name: "Windows Automation" },
@@ -144,9 +264,55 @@ export default function Home() {
                     { name: "Java" },
                     { name: "Azure devops" },
                   ]}
-                  timePeriod="July — Dec 2016"
+                  timePeriod="Aug — May 2022 "
                 />
               </li>
+
+
+
+{/* "I worked as the sole developer on the following projects:
+
+AI/ML: Implemented a facial recognition service to recognize user faces for marking attendance.
+Firebase: Integrated and implemented various Firebase services.
+Geo-Fencing: Developed a system for marking attendance when a user enters a specific area of the office.
+Google Maps: Utilized Google Maps to display employees' locations on the map along with additional information." */}
+
+
+
+              <li className="mb-12">
+                <Experience
+                  role="Flutter Devevloper"
+                  companyName={{
+                    name: "Jsimple Technologies",
+                    url: "https://www.jsimple.com/",
+                  }}
+                  subtitle="Flutter Architect"
+                  description= <>
+                  <DescriptionPoint description="I worked as the sole developer on the following projects:" />
+                  <DescriptionPoint title="AI/ML" description="Implemented a facial recognition service to recognize user faces for marking attendance." />
+                  
+                  <DescriptionPoint title="Firebase" description="Integrated and implemented various Firebase services - FCM, Analytics, Deep linking" />
+                 
+                  <DescriptionPoint title="Geo-Fencing" description="Developed a system for marking attendance when a user enters a specific area of the office." />
+                 
+                  <DescriptionPoint title="Google Maps" description="Utilized Google Maps to display employees' locations on the map along with additional information" />
+                  
+                  </>
+                  technologies={[
+                    { name: "Flutter" },
+                    { name: "Clean architecture" },
+                    { name: "Bloc" },
+                    { name: "Firebase" },
+                    { name: "HRMS" },
+                    { name: "Geo Fencing" },
+                    { name: "Google Maps" },
+                    { name: "Machine Learning" },
+                  ]}
+                  timePeriod="Aug — May 2022 "
+                />
+              </li>
+
+
             </ol>
 
             <section />
@@ -163,34 +329,47 @@ export default function Home() {
               </div>
 
               <Project
-              title="Formula Lockscreen" 
-              description="This unique lock screen app, born from my passion for education and innovation, boasts over 1000 downloads with an impressive 4.7-star rating. Every time users press the power button, they are greeted with randomly displayed math and physics formulas, turning the mundane task of unlocking a phone into a moment of learning. As the sole creator, I designed and implemented every aspect of the app, showcasing my expertise in app development. "
-              image="/formula.png"
-              url="https://play.google.com/store/apps/details?id=com.shriyansh.formula_lockscreen"
-              technologies={[
-                {label:"Android"},
-                {label:"SqLite"},
-                {label:"Java"},
-                {label:"XML"},
-                {label:"Ed-Tech"},
-              ]}
-          />
+                title="Formula Lockscreen"
+                description="This unique lock screen app, born from my passion for education and innovation, boasts over 1000 downloads with an impressive 4.7-star rating. Every time users press the power button, they are greeted with randomly displayed math and physics formulas, turning the mundane task of unlocking a phone into a moment of learning. As the sole creator, I designed and implemented every aspect of the app, showcasing my expertise in app development. "
+                image="/formula.png"
+                url="https://play.google.com/store/apps/details?id=com.shriyansh.formula_lockscreen"
+                technologies={[
+                  { label: "Android" },
+                  { label: "SqLite" },
+                  { label: "Java" },
+                  { label: "XML" },
+                  { label: "Ed-Tech" },
+                ]}
+              />
+
+              <Project
+                title="Sunstone App"
+                description="Extensively worked on Features like LMS, Live Classes, and many more. Created LMS from scratch, which is used by 10000+ students. "
+                image="/sunstone.png"
+                url="https://play.google.com/store/apps/details?id=com.sunstone.hub&hl=en_IN&gl=US"
+                technologies={[
+                  { label: "Flutter" },
+                  { label: "Getx" },
+                  { label: "Firebase" },
+                  { label: "Mixpanel" },
+                  { label: "Hive" },
+                  { label: "Dart" },
+                  { label: "Ed-Tech" },
+                ]}
+              />
 
 <Project
-              title="Sunstone App" 
-              description="Extensively worked on Features like LMS, Live Classes, and many more. Created LMS from scratch, which is used by 10000+ students. "
-              image="/sunstone.png"
-              url="https://play.google.com/store/apps/details?id=com.sunstone.hub&hl=en_IN&gl=US"
-              technologies={[
-                {label:"Flutter"},
-                {label:"Getx"},
-                {label:"Firebase"},
-                {label:"Mixpanel"},
-                {label:"Hive"},
-                {label:"Dart"},
-                {label:"Ed-Tech"},
-              ]}
-          />
+                title="MP Transport"
+                description="A simple app to get the details of the vehicle owner by entering the vehicle number. It scrapes the data from the MP transport website using headless webview and displays it in a user-friendly manner. It has 50,000+ downloads and a 4.5-star rating."
+                image="/mptransport.png"
+                url="https://play.google.com/store/apps/details?id=com.techhole.mp_transport&hl=en_IN&gl=US"
+                technologies={[
+                  { label: "Flutter" },
+                  { label: "Admob" },
+                  { label: "Scraper" },
+                  
+                ]}
+              />
             </section>
           </main>
         </div>
@@ -199,13 +378,32 @@ export default function Home() {
   );
 }
 
+export function DescriptionPoint(props: {
+  title?: string;
+  description: any;
+}) {
+  return (
+    <div className="mb-0 flex">
+      <p className="mt-2 text-sm leading-normal">
+        
+       {props.title &&  <span className="mt-2 text-sm leading-normal text-slate-200">
+      {props.title + ": "}
+        </span>}
+        
+          {props.description}</p>
+    </div>
+  );
+
+}
+
+
 export function Experience(props: {
   /// starting date
   timePeriod: string;
   role: string;
   companyName: { name: string; url: string };
   subtitle: string;
-  description: string;
+  description: any;
   technologies: { name: string }[];
   isPresent?: boolean;
 }) {
@@ -257,10 +455,10 @@ export function Experience(props: {
             </div>
           </div>
         </h3>
-        <p className="mt-2 text-sm leading-normal">{props.description}</p>
+        {props.description}
         <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
-          {props.technologies.map((technology) => (
-            <li className="mr-3 mb-2">
+          {props.technologies.map((technology, index) => (
+            <li key={index} className="mr-3 mb-2">
               <Chip label={technology.name} />
             </li>
           ))}
@@ -304,9 +502,9 @@ return (
                         aria-hidden="true"
                       >
                         <path
-                          fill-rule="evenodd"
+                          fillRule="evenodd"
                           d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
-                          clip-rule="evenodd"
+                          clipRule="evenodd"
                         ></path>
                       </svg>
                     </span>
@@ -319,8 +517,8 @@ return (
               
               {
              props.technologies &&
-              props.technologies!.map((technology) => (
-                <li className="mr-3 mb-2">
+              props.technologies!.map((technology, index) => (
+                <li key = {index} className="mr-3 mb-2">
                   <Chip label={technology.label} />
                 </li>
               ))}
@@ -448,11 +646,10 @@ export function SocialMedia() {
   );
 }
 
-function Bio(props: { ref: any }) {
+function Bio(props: {  }) {
   return (
     <section
       id="about"
-      ref={props.ref}
       className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
       aria-label="About me"
     >
@@ -462,7 +659,6 @@ function Bio(props: { ref: any }) {
         </h2>
       </div>
       <div>
-        <p className="emoji">🚀</p>
         <p>
           <strong>Passionate and Versatile Software Developer</strong>
         </p>
