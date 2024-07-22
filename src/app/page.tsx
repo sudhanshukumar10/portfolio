@@ -1,14 +1,15 @@
 "use client";
 import "./landing.css";
 import { useState } from "react";
-import { MailOutline, PhoneAndroid } from "@mui/icons-material";
+import { MailOutline, Padding, PhoneAndroid } from "@mui/icons-material";
 import SocialMedia from "./widgets/social_media_icons";
 import Bio from "./widgets/bio";
 import Experience from "./widgets/experience";
 import LinkArrow from "./widgets/svgs";
 import Project from "./widgets/project";
 import DescriptionPoint from "./widgets/description_point";
-import Image from 'next/image'
+import Image from 'next/image';
+import GitHubCalendar from 'react-github-calendar';
 
 export default function Home() {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
@@ -106,6 +107,7 @@ export default function Home() {
           </header>
 
           <main id="content" className="pt-24 lg:w-1/2 lg:py-24">
+            <GitHubCalendar username="shriyanshx" style={{"paddingBottom" : "48px"}}/>
             <Bio />
             <Experiences />
             <Projects />
