@@ -107,7 +107,11 @@ export default function Home() {
           </header>
 
           <main id="content" className="pt-24 lg:w-1/2 lg:py-24">
-            <GitHubCalendar username="shriyanshx" style={{"paddingBottom" : "48px"}}/>
+            <div className="github-commit">
+
+            <GitHubCalendar username="shriyanshx" />
+            </div>
+
             <Bio />
             <Experiences />
             <Projects />
