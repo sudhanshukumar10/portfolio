@@ -35,13 +35,13 @@ export default function Home() {
           <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
             <div>
 
-             <Image src = "/shriyansh.jpeg" alt="Shriyansh Raj" width={200} height={200} style={{borderRadius : "50%", marginBottom: 16,}}/>
+             <Image src = "/sudhanshu.jpeg" alt="Shriyansh Raj" width={200} height={200} style={{borderRadius : "50%", marginBottom: 16,}}/>
 
               <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
-                <a href="/">Shriyansh Raj</a>
+                <a href="/">Sudhanshu Kumar</a>
               </h1>
               <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
-                Flutter Engineer at Sunstone
+                Backend Engineer at Sunstone
               </h2>
               <p className="mt-4 max-w-xs leading-normal">
                 I build pixel-perfect, engaging, and accessible digital
@@ -51,17 +51,17 @@ export default function Home() {
               <p className="mt-4 max-w-xs leading-normal flex items-center gap-22">
                 <MailOutline sx={{ height: 20, marginRight: 1 }} />
                 <a
-                  href="mailto:iShreeyansh@gmail.com"
+                  href="sudhanshukumarsde@gmail.com"
                   className="hover:underline"
                 >
-                  iShreeyansh@gmail.com
+                  sudhanshukumarsde@gmail.com
                 </a>
               </p>
 
               <p className="mt-4 max-w-xs leading-normal flex items-center gap-22">
                 <PhoneAndroid sx={{ height: 20, marginRight: 1 }} />
-                <a href="tel:+919685962799" className="hover:underline">
-                  +919685962799
+                <a href="tel:+919798804445" className="hover:underline">
+                  +919798804445
                 </a>
               </p>
 
@@ -109,7 +109,7 @@ export default function Home() {
           <main id="content" className="pt-24 lg:w-1/2 lg:py-24">
             <div className="github-commit">
 
-            <GitHubCalendar username="shriyanshx" />
+            <GitHubCalendar username="sudhanshukumar10" />
             </div>
 
             <Bio />
@@ -137,7 +137,7 @@ function Experiences() {
       <ol className="group/list">
         <li className="mb-12">
           <Experience
-            role="Flutter Engineer"
+            role="Backend Engineer"
             companyName={{
               name: "Sunstone",
               url: "https://hub.sunstone.in/",
@@ -243,13 +243,13 @@ function Experiences() {
               />
             </>
             technologies={[
-              { name: "Flutter" },
-              { name: "iOS" },
-              { name: "Android" },
-              { name: "Flutter Web" },
-              { name: "Dart" },
-              { name: "BLE" },
-              { name: "Getx" },
+              { name: "Node.js" },
+              { name: "javascript" },
+              { name: "TypeScript" },
+              { name: "SQL" },
+              { name: "Redash" },
+              { name: "Kibana" },
+              { name: "Sentry" },
               { name: "Firebase" },
               { name: "CI/CD" },
               { name: "Mixpanel MoEngage" },
@@ -297,7 +297,7 @@ function Experiences() {
 
         <li className="mb-12">
           <Experience
-            role="Flutter Devevloper"
+            role="Backend Devevloper"
             companyName={{
               name: "Jsimple Technologies",
               url: "https://www.jsimple.com/",
@@ -326,7 +326,7 @@ function Experiences() {
               />
             </>
             technologies={[
-              { name: "Flutter" },
+              { name: "Node.js" },
               { name: "Clean architecture" },
               { name: "Bloc" },
               { name: "Firebase" },
@@ -406,7 +406,7 @@ function Projects() {
         image="/mptransport.png"
         url="https://play.google.com/store/apps/details?id=com.techhole.mp_transport&hl=en_IN&gl=US"
         technologies={[
-          { label: "Flutter" },
+          { label: "Node.js" },
           { label: "Admob" },
           { label: "Scraper" },
         ]}

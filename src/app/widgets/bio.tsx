@@ -15,11 +15,10 @@ export default function Bio(props: {}) {
           <strong>Passionate and Versatile Software Developer</strong>
         </p>
         <p>
-          Experienced software developer with over 5 years focused on creating
-          robust solutions. Specializing in Flutter for cross-platform mobile
-          apps and NestJS for full-stack development. Proficient in Flutter,
-          GetX, Firebase, and native iOS/Android. Passionate about technology,
-          innovation, and delivering high-quality solutions.
+        Experienced software developer with over two years of experience creating robust solutions.
+        Specializing in Node.js for developing cross-platform mobile and web applications.
+        Proficient in JavaScript, Node.js, SQL, and TypeScript.
+        Passionate about technology, innovation, and delivering high-quality solutions.
         </p>
         <p className="emoji">🚀👨‍💻</p>
         <p>Let&apos;s code for a future where innovation knows no bounds!</p>

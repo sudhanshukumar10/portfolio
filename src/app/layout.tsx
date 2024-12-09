@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Shriyansh Raj",
-  description: "Flutter Developer, Web Developer, Open Source Enthusiast",
+  title: "Sudhanshu Kumar",
+  description: "Node.js, Web Developer, Open Source Enthusiast",
 };
 
 export default function RootLayout({

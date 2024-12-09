@@ -4,7 +4,7 @@ export default function SocialMedia() {
       <li className="mr-5 text-xs shrink-0">
         <a
           className="block hover:text-slate-200"
-          href="https://github.com/Shriyanshx"
+          href="https://github.com/sudhanshukumar10"
           target="_blank"
           rel="noreferrer noopener"
           aria-label="GitHub (opens in a new tab)"
@@ -25,7 +25,7 @@ export default function SocialMedia() {
       <li className="mr-5 text-xs shrink-0">
         <a
           className="block hover:text-slate-200"
-          href="https://www.linkedin.com/in/ishriyansh/"
+          href="https://in.linkedin.com/in/sudhanshukumar23/"
           target="_blank"
           rel="noreferrer noopener"
           aria-label="LinkedIn (opens in a new tab)"
@@ -47,7 +47,7 @@ export default function SocialMedia() {
       <li className="mr-5 text-xs shrink-0">
         <a
           className="block hover:text-slate-200"
-          href="https://instagram.com/iShriyansh"
+          href="https://www.instagram.com/sudhanshuuuuuuu"
           target="_blank"
           rel="noreferrer noopener"
           aria-label="Instagram (opens in a new tab)"
