@@ -1,8 +1,4 @@
-export default {
-	output: 'export',
-	images: {
-	  unoptimized: true,
-	},
-	basePath: '/portfolio',
-	assetPrefix: '/portfolio/',
-  };
+/** @type {import('next').NextConfig} */
+const nextConfig = {};
+
+export default nextConfig;
