@@ -44,8 +44,7 @@ export default function Home() {
                 Backend Engineer at Sunstone
               </h2>
               <p className="mt-4 max-w-xs leading-normal">
-                I build pixel-perfect, engaging, and accessible digital
-                experiences.
+              I build fast, scalable, and reliable backend systems that power seamless digital experiences.
               </p>
 
               <p className="mt-4 max-w-xs leading-normal flex items-center gap-22">
@@ -145,27 +144,33 @@ function Experiences() {
             subtitle="Software Engineer"
             description=<>
               <DescriptionPoint
-                title="LMS & Content Library"
+                title="FRT(FFF: Fastest Finger First)"
                 description={
                   <>
-                    Developed a Learning Management System (LMS) and a
-                    comprehensive content library for both mobile apps and web
-                    platforms, featuring video progress tracking capabilities.
+                    I developed a calling system named FRT that helps in making calls to leads more efficiently. The system decides which leads to call based on different parameters like preferred language, lead score, and other filters. This ensures that the right leads are contacted at the right time, increasing the chances of a successful conversation.
+FRT helps automate and organize the calling process, making it faster and more targeted. It also allows flexibility to handle different types of leads based on their behavior and preferences.
                   </>
                 }
               />
 
               <DescriptionPoint
-                title="Bluetooth Low Enegery(BLE)"
-                description={
-                  <>
-                    Engineered an attendance automation system utilizing
-                    Bluetooth Low Energy (BLE), enabling users to mark
-                    attendance without the need for additional hardware.
-                  </>
-                }
+              title="Dashboards"
+              description={
+                <>
+                I've also designed and developed multiple dashboards to provide clear, actionable insights and improve business visibility.
+These dashboards help teams make data-driven decisions by turning complex data into simple, visual summaries. 
+                </>
+              }
               />
 
+              <DescriptionPoint
+              title="Leaderboard"
+              description={
+                <>
+                Developed a dynamic leaderboard system to track and reward student engagement.
+The leaderboard ranks students based on the coins they earn through various activities such as marking attendance, completing assignments, paying fees, and more. Each activity awards different types of coins, encouraging consistent participation and creating a healthy sense of competition.
+</>
+              }/>
               <DescriptionPoint
                 title="Firebase Services"
                 description={
@@ -173,17 +178,6 @@ function Experiences() {
                     Implemented various Firebase services, including Firebase
                     Cloud Messaging (FCM), Remote Config, Analytics, and Dynamic
                     Links.
-                  </>
-                }
-              />
-
-              <DescriptionPoint
-                title="Webview"
-                description={
-                  <>
-                    Extensively worked with webviews (Native and Flutter),
-                    developing a media player, employing it as a widget, and
-                    facilitating communication.
                   </>
                 }
               />
@@ -201,34 +195,12 @@ function Experiences() {
               />
 
               <DescriptionPoint
-                title="Deep Links & Dynamic link"
-                description={
-                  <>
-                    Established an infrastructure to manage deep links using
-                    pattern matching and implemented Branch and Firebase Dynamic
-                    Links. also implemented Deffered deep linking for tracking
-                    ads app installs.
-                  </>
-                }
-              />
-
-              <DescriptionPoint
                 title="CI/CD"
                 description={
                   <>
                     CI/CD: Set up an Azure pipeline integrated with GitHub from
                     scratch, enabling simultaneous deployment of builds across
-                    iOS, Android, and web platforms.
-                  </>
-                }
-              />
-
-              <DescriptionPoint
-                title="Native Development"
-                description={
-                  <>
-                    Contributed to the native development aspects of Android,
-                    iOS, and web platforms.
+                    platforms.
                   </>
                 }
               />
@@ -253,89 +225,12 @@ function Experiences() {
               { name: "Firebase" },
               { name: "CI/CD" },
               { name: "Mixpanel MoEngage" },
-              { name: "LMS" },
+              { name: "Sequelize" },
               { name: "Github" },
+              {name: "git"}
             ]}
-            timePeriod="2022 - Present"
+            timePeriod="2023 - Present"
             isPresent={true}
-          />
-        </li>
-
-        <li className="mb-12">
-          <Experience
-            role="SDE"
-            companyName={{
-              name: "Reliance Jio",
-              url: "https://jiomeetpro.jio.com/",
-            }}
-            subtitle="Flutter developer & Automation Engineer"
-            description=<>
-              <DescriptionPoint
-                title="Automation Testing"
-                description="Developed and maintained automation test scripts for the JioMeet Pro app using Cucumber and Java, ensuring the app's reliability and quality."
-              />
-              <DescriptionPoint
-                title="Jio News App"
-                description="
-      Contributed to the development of the Jio News app, a digital newsstand that provides access to a wide range of newspapers and magazines. "
-              />
-            </>
-            technologies={[
-              { name: "Flutter" },
-              { name: "Clean architecture" },
-              { name: "REST sevices" },
-              { name: "Cucumber" },
-              { name: "BDD" },
-              { name: "Windows Automation" },
-              { name: "Selenium" },
-              { name: "Java" },
-              { name: "Azure devops" },
-            ]}
-            timePeriod="Aug — May 2022 "
-          />
-        </li>
-
-        <li className="mb-12">
-          <Experience
-            role="Backend Devevloper"
-            companyName={{
-              name: "Jsimple Technologies",
-              url: "https://www.jsimple.com/",
-            }}
-            subtitle="Flutter Architect"
-            description=<>
-              <DescriptionPoint description="I worked as the sole developer on the following projects:" />
-              <DescriptionPoint
-                title="AI/ML"
-                description="Implemented a facial recognition service to recognize user faces for marking attendance."
-              />
-
-              <DescriptionPoint
-                title="Firebase"
-                description="Integrated and implemented various Firebase services - FCM, Analytics, Deep linking"
-              />
-
-              <DescriptionPoint
-                title="Geo-Fencing"
-                description="Developed a system for marking attendance when a user enters a specific area of the office."
-              />
-
-              <DescriptionPoint
-                title="Google Maps"
-                description="Utilized Google Maps to display employees' locations on the map along with additional information"
-              />
-            </>
-            technologies={[
-              { name: "Node.js" },
-              { name: "Clean architecture" },
-              { name: "Bloc" },
-              { name: "Firebase" },
-              { name: "HRMS" },
-              { name: "Geo Fencing" },
-              { name: "Google Maps" },
-              { name: "Machine Learning" },
-            ]}
-            timePeriod="Feb — Sep 2021 "
           />
         </li>
       </ol>
